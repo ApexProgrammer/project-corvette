@@ -29,6 +29,15 @@ jobs:
       - name: Build Project
         run: npm run build
       
+      - name: Verify Build Output
+        run: |
+          echo "Checking build directory contents:"
+          ls -la build
+          echo "Checking for index.html:"
+          cat build/index.html | head -10
+          echo "Creating .nojekyll file to bypass Jekyll processing"
+          touch build/.nojekyll
+      
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

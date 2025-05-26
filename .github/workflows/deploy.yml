@@ -6,43 +6,33 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write # Needed to push to gh-pages branch
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
       
-      - name: Debug File Structure
-        run: |
-          ls -la
-          cat package.json
-      
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
       
-      - name: Build
+      - name: Build Project
         run: npm run build
-        
-      - name: Debug Build Output
-        run: |
-          ls -la build || echo "No build directory found"
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
-          branch: gh-pages
+          branch: gh-pages # The branch the action should deploy to
+          folder: build    # The folder the action should deploy
+          clean: true      # Automatically remove deleted files from the deploy branch
+          commit-message: Deploy React app to GitHub Pages

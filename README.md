@@ -1,4 +1,8 @@
+<div align="center">
+<img src="public/project-corvette-favicon.png" alt="Corvette Logo" width="100" height="100"/>
+
 # Project Corvette
+</div>
 
 An open-source website dedicated to providing comprehensive information for Corvette enthusiasts, showcasing the rich history and evolution of America's iconic sports car across all generations.
 

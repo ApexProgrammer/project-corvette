@@ -52,14 +52,39 @@
   background: var(--theme-color);
   border-color: var(--theme-color);
   color: #ffffff;
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.mobile-nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--theme-color);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--theme-color);
 }
 
 @media screen and (max-width: 1024px) {
   .mobile-nav {
     display: block;
+    bottom: 0;
   }
   
   body {
     padding-bottom: 70px;
+  }
+    .generation-detail-container {
+    padding-bottom: 100px; /* Ensure content isn't hidden by mobile nav */
+  }
+  
+  /* Ensure Back to Timeline button has enough space above mobile nav */
+  .back-button {
+    margin-bottom: 30px;
   }
 }

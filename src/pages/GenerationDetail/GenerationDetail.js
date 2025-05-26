@@ -91,7 +91,7 @@ function GenerationDetail() {
       <PageBackground overlay="linear-gradient(135deg, rgba(20, 20, 25, 0.95), rgba(30, 30, 35, 0.95))">
         <div className="loading-container">
           <div className="loading-spinner"></div>
-          <p>Loading Corvette Generation {id}... {loadingProgress}%</p>
+          <p>Loading Corvette Generation {id.toUpperCase()}... {loadingProgress}%</p>
         </div>
       </PageBackground>
     );

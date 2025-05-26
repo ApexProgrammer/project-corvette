@@ -21,9 +21,9 @@
 
 .site-header.scrolled {
   padding: 15px 80px;
-  background: rgba(35, 35, 40, 0.7);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
   transform: translateY(0); /* Ensure it stays in place */
 }
 
@@ -260,7 +260,8 @@ body::before {
   
   .site-header.scrolled {
     padding: 8px 15px;
-    background: rgba(35, 35, 40, 0.98);
+    background: transparent;
+    backdrop-filter: none;
   }
   
   .site-header.scrolled .site-title {
@@ -270,12 +271,13 @@ body::before {
 
 @media screen and (max-width: 480px) {
   .site-header {
-    padding: 10px 15px;
+    padding: 8px 15px;
     top: 0;
     margin-top: 0;
-    min-height: 50px;
+    min-height: 45px;
     height: auto;
     transition: padding 0.2s ease, transform 0.3s ease;
+    background: transparent;
   }
   
   .site-title {
@@ -309,8 +311,32 @@ body::before {
   }
 }
 
+@media (max-width: 480px) {
+  .header-spacer {
+    height: 65px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-spacer {
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-spacer {
+    height: 45px;
+  }
+}
+
 /* Extra small screens */
 @media screen and (max-width: 360px) {
+  .site-header {
+    padding: 6px 12px;
+    min-height: 40px;
+    background: transparent;
+  }
+
   .nav-button {
     font-size: 0.75rem; /* Consistent font size for very small screens */
   }
@@ -326,18 +352,25 @@ body::before {
   
   .mobile-menu-toggle {
     margin-left: 18px; /* Increase space between title and menu button */
+    transform: scale(0.95); /* Slightly smaller hamburger menu */
   }
 }
 
 /* Very small screens */
 @media screen and (max-width: 320px) {
+  .site-header {
+    padding: 4px 10px;
+    min-height: 38px;
+    background: transparent;
+  }
+  
   .site-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
     max-width: 65%; /* Even smaller max-width for very small screens */
   }
   
   .site-title span {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .nav-button,
@@ -347,5 +380,39 @@ body::before {
   
   .mobile-menu-toggle {
     margin-left: 20px; /* Further increase space between title and menu button */
+    transform: scale(0.9); /* Slightly smaller hamburger menu */
+  }
+}
+
+/* Extra styles for generation detail pages */
+.generation-detail-container .site-header {
+  background: transparent;
+}
+
+.generation-detail-container .site-header.scrolled {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .generation-detail-container .site-header {
+    min-height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .generation-detail-container .site-header {
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 360px) {
+  .generation-detail-container .site-header {
+    min-height: 38px;
+  }
+}
+
+@media (max-width: 320px) {
+  .generation-detail-container .site-header {
+    min-height: 35px;
   }
 }

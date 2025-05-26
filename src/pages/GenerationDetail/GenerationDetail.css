@@ -55,6 +55,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 40px;
+  margin-bottom: 20px; /* Add bottom margin for spacing */
   display: inline-block;
 }
 
@@ -597,6 +598,29 @@ blockquote cite {
 
   .gallery-caption {
     padding: 15px;
+  }
+
+  /* Responsive adjustments for the Back to Timeline button */
+  .back-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .back-button {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    margin-bottom: 35px; /* Extra space for tiny screens */
   }
 }
 

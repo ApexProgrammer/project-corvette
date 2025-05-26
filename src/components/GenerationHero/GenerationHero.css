@@ -3,6 +3,7 @@
   height: 80vh;
   position: relative;
   overflow: hidden;
+  padding-top: 100px; /* Add padding to account for header */
 }
 
 .hero-image {
@@ -66,15 +67,29 @@
 @media (max-width: 768px) {
   .generation-hero {
     height: 60vh;
+    padding-top: 80px; /* Reduced padding for medium screens */
   }
 }
 
 @media (max-width: 480px) {
   .generation-hero {
     height: 50vh;
+    padding-top: 65px; /* Further reduced padding for small screens */
   }
   
   .hero-content {
     padding: 0 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .generation-hero {
+    padding-top: 50px; /* Even smaller padding for extra small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .generation-hero {
+    padding-top: 45px; /* Minimum padding for very small screens */
   }
 }

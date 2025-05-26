@@ -10,12 +10,28 @@
   justify-content: flex-start; /* Changed from space-between to flex-start for better control */
   padding-bottom: 30px;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding-top: 0;
+  top: 0;
 }
 
 /* Header spacer to prevent content from being hidden behind fixed header */
 .header-spacer {
   height: 100px;
   width: 100%;
+}
+
+/* Adjust header spacer for mobile */
+@media screen and (max-width: 768px) {
+  .header-spacer {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-spacer {
+    height: 60px;
+  }
 }
 
 .main-content {

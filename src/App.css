@@ -1,0 +1,139 @@
+:root {
+  /* Corvette Historic Colors */
+  --color-tuxedo-black: #000000;
+  --color-ermine-white: #F5F5F5;
+  --color-riverside-red: #B22222;
+  --color-laguna-blue: #1E90FF;
+  --color-monza-red: #C41E3A;
+  --color-classic-white: #FFFFFF;
+  --color-bright-red: #FF0000;
+  --color-admiral-blue: #000080;
+  --color-millennium-yellow: #FFD700;
+  --color-jetstream-blue: #007FFF;
+
+  /* Theme Colors - default to Jetstream Blue */
+  --theme-color: var(--color-jetstream-blue);
+  --text-on-theme: #ffffff;
+  --theme-color-light: rgba(0, 127, 255, 0.3);
+  --theme-color-dark: rgba(0, 70, 140, 0.8);
+  --theme-gradient: linear-gradient(45deg, var(--theme-color-dark), var(--theme-color));
+  --theme-accent: rgba(255, 255, 255, 0.25);
+}
+
+/* Global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background: #141419;
+  color: #ffffff;
+}
+
+/* Global transition classes */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Theme transition */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive utilities */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

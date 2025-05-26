@@ -1,0 +1,112 @@
+.hero-section {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  min-height: 50vh; /* Ensure it takes up significant vertical space */
+  margin: 0;
+}
+
+.hero-content {
+  max-width: 900px;
+  min-height: 300px; /* Increased height */
+  text-align: center;
+  padding: 40px 50px; /* Larger padding */
+  background: linear-gradient(
+    135deg, 
+    rgba(30, 30, 35, 0.7),
+    rgba(30, 30, 35, 0.4)
+  );
+  border-radius: 10px;
+  border: 1px solid var(--theme-color-light);
+  transform: scale(1.05); /* Make it slightly larger */
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 20px;
+  box-shadow: 0 8px 25px var(--theme-color-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--theme-gradient);
+  border-radius: 12px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem); /* Larger font size */
+  margin: 0 0 20px 0; /* Increased margin bottom */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  color: var(--theme-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-description {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Slightly larger text */
+  line-height: 1.6;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-weight: 300;
+  max-width: 800px; /* Increased max-width */
+  letter-spacing: 0.2px;
+}
+
+@media screen and (max-height: 700px) {
+  .hero-section {
+    min-height: 40vh;
+  }
+
+  .hero-content {
+    padding: 25px;
+    transform: scale(1); /* Reset transform for smaller screens */
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    padding: 15px;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-content {
+    max-width: 1200px;
+    padding: 60px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero-section {
+    min-height: 50vh;
+  }
+
+  .hero-content {
+    max-width: 1400px;
+  }
+}

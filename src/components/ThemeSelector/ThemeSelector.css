@@ -1,0 +1,220 @@
+.theme-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.theme-control .appearance-button {
+  background: rgba(20, 20, 25, 0.6);
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--theme-color-light);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Button icon styling removed */
+
+.theme-control .appearance-button:hover {
+  background: var(--theme-color-dark);
+  border-color: var(--theme-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--theme-color-dark);
+}
+
+.theme-selector {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border-radius: 12px;
+  background: rgba(15, 15, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--theme-color-light);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(0.9);
+  transform-origin: top right;
+  pointer-events: none;
+  z-index: 110;
+  overflow: hidden;
+}
+
+.theme-control.expanded .theme-selector {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.theme-selector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.theme-selector-header h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.close-theme-selector {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.close-theme-selector:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.color-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+.color-option {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border-color: var(--theme-color);
+  box-shadow: 0 0 10px var(--theme-color);
+}
+
+.color-option[data-active="true"] {
+  border-color: #fff;
+  box-shadow: 0 0 15px var(--theme-color);
+}
+
+.selected-indicator {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Tooltip styles removed */
+
+/* Footer styles removed */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .theme-selector {
+    top: 45px;
+    right: -10px;
+    width: 280px;
+  }
+  
+  .color-options-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 10px; /* Increased vertical gap for tooltip space */
+    padding: 15px;
+    overflow: visible;
+  }
+  
+  .color-option {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  /* Adjust tooltip position for mobile grid layout */
+  .color-option::after {
+    bottom: -28px;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    white-space: normal;
+    max-width: 80px;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .theme-control .appearance-button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  /* Keep text visible on mobile */
+  .button-text {
+    display: inline-block;
+    font-size: 0.75rem;
+  }
+  
+  .theme-selector {
+    width: 250px;
+    right: -5px;
+  }
+  
+  .color-options-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px 8px; /* More vertical space for tooltips */
+    padding: 12px;
+  }
+  
+  .color-option {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Better tooltip positioning and styling for very small screens */
+  .color-option::after {
+    bottom: -25px;
+    font-size: 0.65rem;
+    max-width: 60px;
+    padding: 3px 5px;
+  }
+  
+  .theme-selector-header h4 {
+    font-size: 0.85rem;
+  }
+}

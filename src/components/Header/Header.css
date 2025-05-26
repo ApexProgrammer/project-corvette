@@ -280,6 +280,7 @@ body::before {
   
   .site-title {
     font-size: 1.4rem;
+    max-width: 75%; /* Limit width to prevent overlap with menu button */
   }
   
   .title-tagline {
@@ -289,6 +290,10 @@ body::before {
   .nav-button {
     padding: 8px 10px;
     font-size: 0.8rem;
+  }
+  
+  .mobile-menu-toggle {
+    margin-left: 15px; /* Add space between title and menu button */
   }
 }
 
@@ -308,5 +313,39 @@ body::before {
 @media screen and (max-width: 360px) {
   .nav-button {
     font-size: 0.75rem; /* Consistent font size for very small screens */
+  }
+  
+  .site-title {
+    font-size: 1.2rem;
+    max-width: 70%; /* Further reduce max-width on smaller screens */
+  }
+  
+  .site-title span {
+    font-size: 1.2rem;
+  }
+  
+  .mobile-menu-toggle {
+    margin-left: 18px; /* Increase space between title and menu button */
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+  .site-title {
+    font-size: 1rem;
+    max-width: 65%; /* Even smaller max-width for very small screens */
+  }
+  
+  .site-title span {
+    font-size: 1rem;
+  }
+  
+  .nav-button,
+  .appearance-button {
+    font-size: 0.75rem; /* Ensuring buttons have consistent font size */
+  }
+  
+  .mobile-menu-toggle {
+    margin-left: 20px; /* Further increase space between title and menu button */
   }
 }

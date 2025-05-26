@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 100px 20px 40px;
+  padding: 120px 20px 40px;
   background: linear-gradient(135deg, rgba(20, 20, 25, 0.95), rgba(30, 30, 35, 0.95));
 }
 
@@ -104,7 +104,7 @@
 
 @media screen and (max-width: 480px) {
   .under-hood-container {
-    padding: 70px 10px 20px;
+    padding: 90px 10px 20px;
   }
 
   .under-hood-content {

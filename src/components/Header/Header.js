@@ -39,7 +39,7 @@ function Header({ themeColors, selectedTheme, onThemeChange, showThemeSelector, 
       window.removeEventListener('scroll', handleScroll);
       if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
     };
-  }, [mobileMenuOpen]);
+  }, [mobileMenuOpen, setIsScrolled, setHideHeader, lastScrollY]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);

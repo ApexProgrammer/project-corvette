@@ -3,7 +3,6 @@ import './SectionNav.css';
 
 const SectionNav = ({ sections, activeSection, onSectionChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const navRef = useRef(null);
@@ -12,7 +11,6 @@ const SectionNav = ({ sections, activeSection, onSectionChange }) => {
   // Handle window resize events
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
       if (window.innerWidth > 768) {
         setIsMenuOpen(false); // Always close menu when switching to desktop
       }

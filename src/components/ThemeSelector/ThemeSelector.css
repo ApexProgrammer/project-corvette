@@ -187,7 +187,7 @@
   /* Keep text visible on mobile */
   .button-text {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.8rem; /* Match nav-button font size */
   }
   
   .theme-selector {
@@ -216,5 +216,13 @@
   
   .theme-selector-header h4 {
     font-size: 0.85rem;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 360px) {
+  .theme-control .appearance-button,
+  .button-text {
+    font-size: 0.75rem; /* Consistent font size for very small screens */
   }
 }

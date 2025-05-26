@@ -2,6 +2,7 @@
   "name": "corvette-history",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://apexprogrammer.github.io/project-corvette/",
   "dependencies": {
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",

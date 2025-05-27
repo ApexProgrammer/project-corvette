@@ -9,7 +9,6 @@ import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
 import { useTheme } from '../../contexts/ThemeContext';
 import { getGeneration } from '../../utils/generationUtils';
 import { themeColors } from '../../data/themeColors';
-import MobileNav from '../../components/MobileNav/MobileNav';
 import ScrollProgress from '../../components/ScrollProgress/ScrollProgress';
 import BackToTop from '../../components/BackToTop/BackToTop';
 import SectionNav from '../../components/SectionNav/SectionNav';
@@ -121,7 +120,6 @@ function GenerationDetail() {
         />
         
         <GenerationNav currentGeneration={id} />
-        <MobileNav />
         <BackToTop />
         <GenerationHero generation={generation} />
         

@@ -120,27 +120,62 @@ html {
 /* Responsive container */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  position: relative;
 }
 
 /* Responsive utilities */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1921px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .container {
+    max-width: 1800px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 100%;
-    padding: 0 2rem;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 2.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }

@@ -23,10 +23,10 @@ function UnderTheHood() {
           <div className="content-section">
             <h2>From Passion to Project: The Story</h2>
             <p>
-              Ever since I was a little kid, I've been fascinated by Corvettes. My passion for these incredible cars truly ignited when my dad bought a C3 Corvette. From that moment, I was hooked. As a Corvette enthusiast, I decided to create this website to share my love for these iconic vehicles with others.
+              Ever since I was a little kid, I've been fascinated by Corvettes. My passion for these incredible cars started when my dad bought a C3 Corvette. From that moment, I was hooked. I decided to create this website to share my love for these iconic vehicles with others while providing a foundation for people to contribute to openly.
             </p>
             <p>
-              This project is a celebration of American automotive engineering and design. The Chevrolet Corvette represents over six decades of innovation, performance, and cultural impact. As both a developer and a Corvette nerd, I wanted to create an interactive timeline that captures the evolution of this legendary car. I hope this site helps fellow enthusiasts explore the rich history and various generations of Corvettes, and discover fascinating facts along the way.
+              This project is a celebration of American automotive engineering and design. The Chevrolet Corvette represents over six decades of innovation, performance, and cultural impact. As both a developer and Corvette nerd, I wanted to create an interactive timeline that captures the evolution of this legendary car. 
             </p>
           </div>
           

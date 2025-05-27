@@ -15,14 +15,14 @@
 
 ## 🏎️ About
 
-Project Corvette is a community-driven platform that celebrates the rich legacy of the Chevrolet Corvette. From the classic C1 (1953-1962) to the revolutionary C8, we document every curve, spec, and story that makes these cars legendary.
+Project Corvette is a community-driven platform that celebrates the rich legacy of the Chevrolet Corvette. From the classic C1 (1953-1962) to the revolutionary C8.
 
 ## ✨ Features
 
 | Feature | Description |
 |---------|-------------|
 | 📚 **Generational Guides** | In-depth profiles of every Corvette generation |
-| 🖼️ **High-Resolution Gallery** | Stunning images showcasing iconic designs |
+| 🖼️ **High-Resolution Gallery** | Images displaying Corvettes |
 | 📊 **Technical Specs** | Detailed specifications for every model |
 | ⏳ **Interactive Timeline** | Journey through Corvette's evolution |
 | 📱 **Fully Responsive** | Looks great on any device |
@@ -72,12 +72,6 @@ We welcome all Corvette enthusiasts to contribute! Here's how you can help:
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- All the amazing Corvette enthusiasts who keep the passion alive
-- The open source community for their invaluable contributions
-- Chevrolet for creating an automotive legend
 
 <div align="center">
   <p>Made with ❤️ by Corvette enthusiasts, for Corvette enthusiasts</p>

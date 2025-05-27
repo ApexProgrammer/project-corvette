@@ -72,8 +72,3 @@ We welcome all Corvette enthusiasts to contribute! Here's how you can help:
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<div align="center">
-  <p>Made with ❤️ by Corvette enthusiasts, for Corvette enthusiasts</p>
-  <p>Join us in preserving Corvette history for future generations!</p>
-</div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b3b9e24.css",
-    "main.js": "/static/js/main.df5cbe0f.js",
+    "main.css": "/static/css/main.81c55ac4.css",
+    "main.js": "/static/js/main.e56e256e.js",
     "static/media/robin-le-mee-Sph4w-tvCNM-unsplash.jpg": "/static/media/robin-le-mee-Sph4w-tvCNM-unsplash.436d48fba71602df883c.jpg",
     "static/media/zell-8157pheMi-I-unsplash.jpg": "/static/media/zell-8157pheMi-I-unsplash.76f5b6b66c2bf0061a46.jpg",
     "static/media/chris-hardy-HSqcevj_v4U-unsplash.jpg": "/static/media/chris-hardy-HSqcevj_v4U-unsplash.6f36afc371d41478b742.jpg",
@@ -83,11 +83,11 @@
     "static/media/david-valentine-8NgIGqc62WI-unsplash.jpg": "/static/media/david-valentine-8NgIGqc62WI-unsplash.b70291fb47516b975a81.jpg",
     "static/media/agentseed-CdzfHaYm4Bs-unsplash.jpg": "/static/media/agentseed-CdzfHaYm4Bs-unsplash.7a21c68568acb6cd0257.jpg",
     "index.html": "/index.html",
-    "main.9b3b9e24.css.map": "/static/css/main.9b3b9e24.css.map",
-    "main.df5cbe0f.js.map": "/static/js/main.df5cbe0f.js.map"
+    "main.81c55ac4.css.map": "/static/css/main.81c55ac4.css.map",
+    "main.e56e256e.js.map": "/static/js/main.e56e256e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b3b9e24.css",
-    "static/js/main.df5cbe0f.js"
+    "static/css/main.81c55ac4.css",
+    "static/js/main.e56e256e.js"
   ]
 }

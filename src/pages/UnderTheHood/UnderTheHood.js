@@ -67,6 +67,49 @@ function UnderTheHood() {
               For official specifications and details, please visit the official Chevrolet website or contact General Motors directly.
             </p>
           </div>
+          
+          <div className="content-section github-contribute-section">
+            <h2>Contribute to Project Corvette</h2>
+            <p>
+              Project Corvette is an open-source project maintained by passionate Corvette enthusiasts. We believe that 
+              collaborative efforts can create the most comprehensive and accurate Corvette resource on the web.
+            </p>
+            <p>
+              Whether you're a developer, a Corvette expert, a historian, or just a fan, your contributions are welcome!
+              You can help us by adding information, fixing errors, improving the design, or enhancing the codebase.
+            </p>
+            
+            <div className="github-container">
+              <a 
+                href="https://github.com/ApexProgrammer/project-corvette" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="github-button"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="github-icon">
+                  <path fill="currentColor" d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"/>
+                </svg>
+                Contribute on GitHub
+              </a>
+              <p className="github-description">
+                Visit our repository to explore the code, submit issues, or create pull requests.
+              </p>
+            </div>
+            
+            <h3>How You Can Help</h3>
+            <ul className="contribution-list">
+              <li>Add missing information about specific Corvette models or years</li>
+              <li>Improve technical specifications and data accuracy</li>
+              <li>Share high-quality Corvette photographs (with proper attribution)</li>
+              <li>Enhance the website's performance and user experience</li>
+              <li>Fix bugs or implement new features</li>
+            </ul>
+            
+            <p>
+              Together, we can build the most comprehensive and engaging Corvette resource on the web.
+              Your passion and knowledge are invaluable to this community project!
+            </p>
+          </div>
         </div>
       </div>
     </PageBackground>

@@ -99,6 +99,95 @@
   font-size: 1.2em;
 }
 
+/* GitHub Contribution Section Styles */
+.github-contribute-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  margin-top: 60px;
+}
+
+.github-container {
+  background: rgba(30, 30, 35, 0.6);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--theme-color-light);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.github-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(var(--theme-rgb), 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.github-button {
+  background: linear-gradient(135deg, var(--theme-color-dark) 0%, var(--theme-color) 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(var(--theme-rgb), 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.github-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(var(--theme-rgb), 0.6);
+}
+
+.github-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--theme-rgb), 0.4);
+}
+
+.github-icon {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+.github-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 5px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.contribution-list {
+  background: rgba(25, 25, 30, 0.5);
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin: 20px 0;
+  border-left: 4px solid var(--theme-color);
+}
+
+.contribution-list li::before {
+  content: '✓';
+  color: var(--theme-color);
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 1600px) {
   .under-hood-content {
     max-width: 900px;
@@ -168,6 +257,19 @@
     font-size: 1.05rem;
     line-height: 1.7;
   }
+
+  .github-button {
+    font-size: 1rem;
+    padding: 14px 24px;
+  }
+  
+  .github-description {
+    max-width: 95%;
+  }
+  
+  .github-container {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -190,5 +292,16 @@
   .content-section p,
   .content-section li {
     font-size: 1rem;
+  }
+
+  .github-button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .github-container {
+    padding: 15px;
   }
 }

@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import ThemeSelector from '../ThemeSelector/ThemeSelector';
 import './Header.css';
 
-function Header({ themeColors, selectedTheme, onThemeChange, showThemeSelector, onToggleSelector }) {
+function Header({ themeColors, selectedTheme, onThemeChange, showThemeSelector, onToggleSelector, transparent = false }) {
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,7 +65,7 @@ function Header({ themeColors, selectedTheme, onThemeChange, showThemeSelector, 
   };
 
   return (
-    <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${hideHeader ? 'header-hidden' : ''}`}>
+    <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${hideHeader ? 'hidden' : ''} ${transparent ? 'transparent' : ''}`}>
       <Link to="/" className="site-title">
         <span style={commonFontStyle}>CORVETTE</span>
         <span style={{...commonFontStyle, margin: '0 10px', color: 'var(--theme-color)'}}>|</span>

@@ -28,6 +28,16 @@ function GenerationDetail() {
   useKeyboardNavigation(id);
 
   useEffect(() => {
+    // Add class to body for generation detail specific styles
+    document.body.classList.add('generation-detail');
+    
+    // Clean up on unmount
+    return () => {
+      document.body.classList.remove('generation-detail');
+    };
+  }, []);
+
+  useEffect(() => {
     if (!generation) return;
     
     const imagesToPreload = [
@@ -107,6 +117,7 @@ function GenerationDetail() {
           onThemeChange={applyTheme}
           showThemeSelector={showThemeSelector}
           onToggleSelector={setShowThemeSelector}
+          transparent={true}
         />
         
         <GenerationNav currentGeneration={id} />

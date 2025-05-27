@@ -11,20 +11,37 @@
   right: 0;
   z-index: 1000;
   box-sizing: border-box;
-  transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: none;
-  will-change: transform, padding, height; /* Optimize for animations */
-  margin-top: 0;
-  margin-bottom: 0;
+  will-change: transform, padding, height;
+  margin: 0;
   height: auto;
+}
+
+.site-header.transparent {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.site-header.transparent.scrolled,
+.generation-detail .site-header.transparent {
+  background: rgba(20, 20, 25, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure header is always visible on generation detail pages */
+.generation-detail .site-header {
+  background: rgba(20, 20, 25, 0.95);
 }
 
 .site-header.scrolled {
   padding: 15px 80px;
-  background: transparent;
-  backdrop-filter: none;
-  box-shadow: none;
-  transform: translateY(0); /* Ensure it stays in place */
+  background: rgba(20, 20, 25, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
 }
 
 .site-title {

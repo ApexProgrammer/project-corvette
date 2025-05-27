@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81c55ac4.css",
-    "main.js": "/static/js/main.e56e256e.js",
+    "main.js": "/static/js/main.9dfb1ccf.js",
     "static/media/robin-le-mee-Sph4w-tvCNM-unsplash.jpg": "/static/media/robin-le-mee-Sph4w-tvCNM-unsplash.436d48fba71602df883c.jpg",
     "static/media/zell-8157pheMi-I-unsplash.jpg": "/static/media/zell-8157pheMi-I-unsplash.76f5b6b66c2bf0061a46.jpg",
     "static/media/chris-hardy-HSqcevj_v4U-unsplash.jpg": "/static/media/chris-hardy-HSqcevj_v4U-unsplash.6f36afc371d41478b742.jpg",
@@ -84,10 +84,10 @@
     "static/media/agentseed-CdzfHaYm4Bs-unsplash.jpg": "/static/media/agentseed-CdzfHaYm4Bs-unsplash.7a21c68568acb6cd0257.jpg",
     "index.html": "/index.html",
     "main.81c55ac4.css.map": "/static/css/main.81c55ac4.css.map",
-    "main.e56e256e.js.map": "/static/js/main.e56e256e.js.map"
+    "main.9dfb1ccf.js.map": "/static/js/main.9dfb1ccf.js.map"
   },
   "entrypoints": [
     "static/css/main.81c55ac4.css",
-    "static/js/main.e56e256e.js"
+    "static/js/main.9dfb1ccf.js"
   ]
 }

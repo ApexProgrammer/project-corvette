@@ -1,11 +1,7 @@
 <div align="center">
   <h1>Project Corvette</h1>
   
-  [![GitHub stars](https://img.shields.io/github/stars/apexprogrammer/project-corvette?style=social)](https://github.com/apexprogrammer/project-corvette/stargazers)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-  
-  <p>🚀 The ultimate open-source encyclopedia of America's most iconic sports car</p>
+  <p>The ultimate open-source encyclopedia of America's most iconic sports car</p>
 </div>
 
 <div align="center">
@@ -13,21 +9,21 @@
   <p><em>Project Corvette - Interactive Corvette Generation Explorer</em></p>
 </div>
 
-## 🏎️ About
+## About
 
 Project Corvette is a community-driven platform that celebrates the rich legacy of the Chevrolet Corvette. From the classic C1 (1953-1962) to the revolutionary C8.
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 📚 **Generational Guides** | In-depth profiles of every Corvette generation |
-| 🖼️ **High-Resolution Gallery** | Images displaying Corvettes |
-| 📊 **Technical Specs** | Detailed specifications for every model |
-| ⏳ **Interactive Timeline** | Journey through Corvette's evolution |
-| 📱 **Fully Responsive** | Looks great on any device |
+| **Generational Guides** | In-depth profiles of every Corvette generation |
+| **High-Resolution Gallery** | Images displaying Corvettes |
+| **Technical Specs** | Detailed specifications for every model |
+| **Interactive Timeline** | Journey through Corvette's evolution |
+| **Fully Responsive** | Looks great on any device |
 
-## 🛠️ Technologies
+## Technologies
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -36,7 +32,7 @@ Project Corvette is a community-driven platform that celebrates the rich legacy 
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </div>
 
-## 🚀 Quick Start
+## Quick Start
 
 Get the project running locally in minutes:
 
@@ -52,7 +48,7 @@ npm install
 npm start
 ```
 
-## 🌟 How to Contribute
+## How to Contribute
 
 We welcome all Corvette enthusiasts to contribute! Here's how you can help:
 
@@ -69,6 +65,6 @@ We welcome all Corvette enthusiasts to contribute! Here's how you can help:
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
